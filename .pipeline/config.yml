@@ -49,6 +49,12 @@ stages:
 steps:
   cloudFoundryDeploy:
     mtaDeployParameters: "-f --version-rule ALL"
+  npmExecuteEndToEndTests:
+    runScripts:
+      - ci-e2e
+    scriptOptions:
+      - --verbose
+    virtualFrameBuffer: true
   # mavenExecute:
   #   dockerImage: devxci/mbtci:1.0.14
   Build:
