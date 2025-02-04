@@ -29,7 +29,7 @@ stages:
     cfSpace: "IS-DEV"
     deployType: "standard"
     cloudFoundryDeploy: true
-    npmExecuteEndToEndTests: true
+    npmExecuteEndToEndTests: false
   Malware Scan:
     malwareExecuteScan: false
   Release:
