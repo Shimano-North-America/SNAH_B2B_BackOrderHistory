@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "ci-e2e": "cypress run"
+    "ci-e2e": "cypress run --browser chrome --headed --verbose"
   },
   "cds": {
     "requires": {
